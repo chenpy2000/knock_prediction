@@ -1,0 +1,15 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+matplotlib
+openpyxl          # needed by pandas to read the .xlsx data file
+
+# Deep learning — CUDA 12.6 (cu126) GPU build of PyTorch.
+# The +cu126 tag only exists on PyTorch's index, so this forces the GPU wheel.
+--extra-index-url https://download.pytorch.org/whl/cu126
+torch==2.11.0+cu126
+
+# Notebook + kernel
+jupyterlab
+ipykernel
